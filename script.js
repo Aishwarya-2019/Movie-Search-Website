@@ -73,7 +73,7 @@ async function searchMovie() {
 
   try {
     const response = await fetch(
-      `https://www.omdbapi.com/?apikey=af487a17&s=${encodeURIComponent(currentSearch)}&page=${currentPage}`
+      `http://www.omdbapi.com/?i=tt3896198&apikey=6b9a7a80=${encodeURIComponent(currentSearch)}&page=${currentPage}`
     );
 
     const data = await response.json();
@@ -227,4 +227,5 @@ function loadSearchHistory() {
   } else {
     historySection.style.display = "none";
   }
+
 }
