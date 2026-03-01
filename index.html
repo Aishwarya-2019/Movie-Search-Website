@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="theme-toggle">
+      <button id="themeBtn">🌙 Dark Mode</button>
+    </div>
+
+    <div class="container">
+      <h1>🎬Movie Search App</h1>
+      <div class="search-box">
+        <input type="text" id="movieInput" placeholder="Enter movie name..." />
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <!-- Search History -->
+      <div id="historySection" class="history-section" style="display: none">
+        <h3>Recent Searches</h3>
+        <div id="historyList" class="history-list"></div>
+      </div>
+
+      <div id="result"></div>
+
+      <!-- Pagination -->
+      <div id="pagination" class="pagination" style="display: none">
+        <button id="prevBtn" class="pagination-btn">← Previous</button>
+        <span id="pageInfo"></span>
+        <button id="nextBtn" class="pagination-btn">Next →</button>
+      </div>
+    </div>
+
+    <!-- Modal for Movie Details -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeBtn" class="close-btn">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
